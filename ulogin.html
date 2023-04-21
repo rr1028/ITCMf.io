@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Login Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<title>Login Page</title>
+			</head>
+			<body>
+				<h2>Login</h2>
+				<form action="elements.html">
+					<label for="userid">User ID:</label><br>
+					<input type="text" id="userid" name="userid" required><br>
+					<label for="password">Password:</label><br>
+					<input type="password" id="password" name="password" required><br>
+					<input type="submit" value="Login">
+				</form>
+			
+				<script>
+					const form = document.querySelector('form');
+					form.addEventListener('submit', (event) => {
+						const userid = document.getElementById('userid').value;
+						const password = document.getElementById('password').value;
+						if (userid === 'sam' && password === 'sam123' ||
+							userid === 'joe' && password === 'joe123' ||
+							userid === 'rishi' && password === 'rishi123') {
+							return true;
+						} else {
+							alert('Invalid user ID or password.');
+							event.preventDefault();
+						}
+					});
+				</script>
+			</body>
+			</html>
+			
+						
+
+						
+						
+						
+						
+
+						
+						<p></p>
+					
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
